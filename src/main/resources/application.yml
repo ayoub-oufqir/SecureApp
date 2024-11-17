@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: SecureApp
+  datasource:
+    url: jdbc:mysql://localhost:3306/jwt_security
+    password: root
+    username: root
+  jpa:
+    hibernate:
+      # create new DB when we start app and drop it when we stop the app
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
