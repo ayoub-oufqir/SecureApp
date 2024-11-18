@@ -15,3 +15,7 @@ spring:
         format_sql: true
     database: mysql
     database-platform: org.hibernate.dialect.MySQL8Dialect
+# shouldn't be here, instead we can store it in .env file
+jwt:
+  secret:
+    key: 34624e6f726151396e6b416e653675577a48675661366f794941414776326234

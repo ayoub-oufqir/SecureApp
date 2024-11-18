@@ -18,8 +18,9 @@ import java.util.function.Function;
 
 @Service
 public class JwtService {
+    // 256 bit secret key can be generated using websites like https://acte.ltd/utils/randomkeygen
     @Value("${jwt.secret.key}")
-    private static String SECRET_KEY;
+    private String SECRET_KEY;
 
     public String extractUsername(String token) {
         return extractClaim(token, Claims::getSubject);
