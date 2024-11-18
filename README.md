@@ -1,0 +1,1 @@
+SecureApp is a Java based app secured with the help of Spring Security and JWT
